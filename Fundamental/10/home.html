@@ -1,0 +1,40 @@
+<!--
+    Author     : Jibin Joy
+    SAPUI5 Fragments
+    Reference : 
+    - http://help.sap.com/saphelp_hanaplatform/helpdata/en/b8/7b4b705c144423a2fec1628b85a486/content.htm
+    - https://sapui5.netweaver.ondemand.com/sdk/#docs/guide/36a5b130076e4b4aac2c27eebf324909.html
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+    <HEAD>
+    <TITLE>SAPUI5 Fragments</TITLE>
+        <script
+				id="sap-ui-bootstrap"
+				src="/resources/sap-ui-core.js"
+				data-sap-ui-theme="sap_bluecrystal"
+				data-sap-ui-preload="async"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-resourceroots='{
+				    "external" : "JS",
+				    "i18n" : "i18n",
+				    "Fundamental" : ""
+				}'>
+		</script>  
+		<script>
+		    sap.ui.require([
+    			"external/Helper"
+    		],function (Helper) {
+    		    sap.ui.getCore().attachInit(function(){
+    		    	new Helper().init();
+    		    });
+    		});
+		</script>
+    </HEAD>
+    <BODY>
+        <DIV ID="content">
+            
+        </DIV>
+    </BODY>
+</HTML>

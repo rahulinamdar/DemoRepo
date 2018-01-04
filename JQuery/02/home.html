@@ -1,0 +1,33 @@
+<!--
+    Author     : Jibin Joy
+    Ajax and Dynamic Element Example 
+    Reference  : http://www.w3schools.com/ajax/default.asp
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML> 
+    <HEAD>
+    <TITLE>jQuery Ajax</TITLE>
+    <!-- 
+        Stylesheet
+    -->
+    <SCRIPT src="JS/jquery-2.2.4.js"></SCRIPT>
+    <SCRIPT src="JS/Script.js"></SCRIPT>
+    <SCRIPT>
+        $(document).ready(getEmployee);
+    </SCRIPT>
+    </HEAD>
+    <BODY>
+    <!--
+         Table with 2 Column  but Rows will be added dynamically 
+    -->
+         <TABLE id="employee">
+            <THEAD>
+                <TR>
+                    <TH>id</TH>
+                    <TH>employee name</TH>
+                </TR>
+            </THEAD>
+         </TABLE>
+    </BODY>
+</HTML>

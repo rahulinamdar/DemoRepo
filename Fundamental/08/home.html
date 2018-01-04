@@ -1,0 +1,40 @@
+<!--
+    Author     : Jibin Joy
+    SAPUI5 Views inheritance
+    Reference : 
+    - http://help.sap.com/saphelp_nw74/helpdata/en/91/f0a8dc6f4d1014b6dd926db0e91070/content.htm
+    - https://scn.sap.com/thread/3628531
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+    <HEAD>
+    <TITLE>SAPUI5 Views inheritance</TITLE>
+        <script
+				id="sap-ui-bootstrap"
+				src="/resources/sap-ui-core.js"
+				data-sap-ui-theme="sap_bluecrystal"
+				data-sap-ui-preload="async"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-resourceroots='{
+				    "external" : "JS",
+				    "i18n" : "i18n",
+				    "Fundamental" : ""
+				}'>
+		</script>  
+		<script>
+		    sap.ui.require([
+    			"external/Helper"
+    		],function (Helper) {
+    		    sap.ui.getCore().attachInit(function(){
+    		    	new Helper().init();
+    		    });
+    		});
+		</script>
+    </HEAD>
+    <BODY>
+        <DIV ID="content">
+            
+        </DIV>
+    </BODY>
+</HTML>

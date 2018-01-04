@@ -1,0 +1,42 @@
+<!--
+    Author     : Jibin Joy
+    First steps to SAPUI5
+    Reference  : 
+        1. Configuration of the SAPUI5 Runtime : https://help.sap.com/saphelp_nw74/helpdata/en/91/f08de06f4d1014b6dd926db0e91070/content.htm?frameset=/en/91/f2d03b6f4d1014b6dd926db0e91070/frameset.htm&current_toc=/en/5c/be4e5b4a19479a92b1d32ff23b7b63/plain.htm&node_id=104&show_children=false
+        2. Library : https://help.sap.com/saphelp_nw74/helpdata/en/36/3cd16eba1f45babe3f661f321a7820/content.htm  
+        2. Logger : https://help.sap.com/saphelp_uiaddon10/helpdata/en/9f/4d62c6648a423d85aaf2bfc2c7ddfe/content.htm
+        3. Registering Component Resources : https://help.sap.com/saphelp_uiaddon10/helpdata/en/9c/5a9619f69f4a819f91fc89d9ff56f1/content.htm
+        4. Application Descriptor File : https://help.hana.ondemand.com/help/frameset.htm?aed1ffa3f3e741b3a4573c9e475aa2a4.html
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+    <HEAD>
+    <TITLE>First steps to SAPUI5</TITLE>
+        <!-- 
+            Stylesheet
+        -->
+        <script
+				id="sap-ui-bootstrap"
+				src="/resources/sap-ui-core.js"
+				data-sap-ui-theme="sap_bluecrystal"
+				data-sap-ui-preload="async"
+				data-sap-ui-resourceroots='{
+				    "external" : "JS"
+				}'>
+		</script>  
+		
+		
+		
+		<script>
+		    sap.ui.require([
+    			"external/Helper"
+    		],function (Helper1) {
+    		    sap.ui.getCore().attachInit(Helper1.init);
+    		});
+		</script>
+    </HEAD>
+    <BODY>
+        Old Fashion Example : Hello World but in SAPUI5
+    </BODY>
+</HTML>

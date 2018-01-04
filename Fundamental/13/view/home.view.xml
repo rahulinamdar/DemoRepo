@@ -1,0 +1,29 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="Fundamental.controller.home"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Home">
+		<content>
+			<List
+				growing="true"
+				growingThreshold="5"
+				noDataText="No Sales available"
+				items="{Orders>/d/results}">
+				<headerToolbar>
+					<Toolbar>
+						<Title text="Orders" level="H2" />
+						<ToolbarSpacer />
+						<Button
+							icon="sap-icon://refresh"
+							press="refreshDataFromBackend" />
+					</Toolbar>
+				</headerToolbar>
+				<StandardListItem
+					title="{Orders>OrderID}"
+					description="{Orders>CustomerID}"
+					iconDensityAware="false"
+					iconInset="false"
+					type="Navigation"
+					press="onPress"/>
+			</List>
+		</content>
+	</Page>
+</mvc:View>

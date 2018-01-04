@@ -1,0 +1,14 @@
+{
+  "generation": [
+    {
+      "templateId": "ui5template.basicSAPUI5ApplicationComponent",
+      "templateVersion": "1.4.0",
+      "dateTimeStamp": "Fri, 27 May 2016 16:02:47 GMT"
+    }
+  ],
+  "hcpdeploy": {
+    "account": "p1196808trial",
+    "name": "sapui5",
+    "lastVersionWeTriedToDeploy": "1.0.0"
+  }
+}

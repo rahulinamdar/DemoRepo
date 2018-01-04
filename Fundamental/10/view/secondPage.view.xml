@@ -1,0 +1,10 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="Fundamental.controller.secondPage"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+			<Text text="I am in Second Page"/>
+			<Button text="Go to Home Page" press="onPress"/>
+			<core:Fragment fragmentName="Fundamental.view.sampleFragment" type="XML" />	
+		</content>
+	</Page>
+</mvc:View>

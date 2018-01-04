@@ -1,0 +1,39 @@
+<!--
+    Author     : Jibin Joy
+    Models in SAPUI5
+    Reference  : 
+        1. JSON Model  : http://scn.sap.com/community/developer-center/front-end/blog/2014/12/10/sap-ui5-with-local-json-model
+        2. Odata Model : https://help.sap.com/saphelp_nw75/helpdata/en/6c/47b2b39db9404582994070ec3d57a2/content.htm
+        3. XML Model   : Will be same Json Model instead of Json data it will be XML format Data 
+        4. Messages    : https://help.sap.com/saphelp_uiaddon10/helpdata/en/91/f385926f4d1014b6dd926db0e91070/content.htm     
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+    <HEAD>
+    <TITLE>SAPUI5 Models</TITLE>
+        <script
+				id="sap-ui-bootstrap"
+				src="/resources/sap-ui-core.js"
+				data-sap-ui-theme="sap_bluecrystal"
+				data-sap-ui-preload="async"
+				data-sap-ui-libs="sap.ui.table,sap.ui.commons,sap.ui.table"
+				data-sap-ui-resourceroots='{
+				    "external" : "JS",
+				    "i18n" : "i18n"
+				}'>
+		</script>  
+		<script>
+		    sap.ui.require([
+    			"external/Helper"
+    		],function (oHelper) {
+    		    sap.ui.getCore().attachInit(oHelper.init);
+    		});
+		</script>
+    </HEAD>
+    <BODY>
+        <DIV ID="content">
+            
+        </DIV>
+    </BODY>
+</HTML>

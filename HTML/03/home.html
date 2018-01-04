@@ -1,0 +1,82 @@
+<!--
+    Author     : Jibin Joy
+    CSS Example 
+    1. Inline Styles
+    2. Internal Style Sheet
+    3. External Style Sheet
+    Reference  : http://www.w3schools.com/css/default.asp
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML> 
+    <HEAD>
+    <TITLE>CSS</TITLE>
+    <!-- 
+        JavaScript
+    -->
+    <LINK rel="stylesheet" type="text/css" href="CSS/Style.css">
+    <STYLE>
+        #table1 TH , #table1  TD
+        {   
+             /*Shorthand*/
+            border-bottom: 1px solid black;
+            
+            /*  Or
+                border-bottom-color: black;
+                border-bottom-style: solid;
+                border-bottom-width: 1px; 
+            */
+        }
+    </STYLE>
+    </HEAD>
+    <BODY>
+    <!--
+        Simple Table with 3 Rows and 2 Column  
+    -->
+         <TABLE>
+            <THEAD>
+                <TR>
+                    <TH>id</TH>
+                    <TH style="color:red;">employee name</TH>
+                </TR>
+            </THEAD>
+            <TBODY>
+                <TR>
+                    <TD>001</TD>
+                    <TD class="uppercase">employee1</TD>
+                </TR>
+                <TR>
+                    <TD>002</TD>
+                    <TD class="lowercase">EMPLOYEE2</TD>
+                </TR>
+                <TR>
+                    <TD>003</TD>
+                    <TD class="uppercase">employee2</TD>
+                </TR>
+            </TBODY>
+         </TABLE>
+         
+          <TABLE id="table1">
+            <THEAD>
+                <TR>
+                    <TH>id</TH>
+                    <TH style="color:red;">employee name</TH>
+                </TR>
+            </THEAD>
+            <TBODY>
+                <TR>
+                    <TD>001</TD>
+                    <TD class="uppercase">employee1</TD>
+                </TR>
+                <TR>
+                    <TD>002</TD>
+                    <TD class="lowercase">EMPLOYEE2</TD>
+                </TR>
+                <TR>
+                    <TD>003</TD>
+                    <TD class="uppercase">employee2</TD>
+                </TR>
+            </TBODY>
+         </TABLE>
+    </BODY>
+</HTML>

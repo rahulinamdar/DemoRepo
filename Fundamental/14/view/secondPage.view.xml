@@ -1,0 +1,11 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="Fundamental.controller.secondPage"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+			<Text text="Hello {Orders>OrderID}"/>
+			<Button text="Go to Home Page" press="onPress"/>
+			<core:Fragment fragmentName="Fundamental.view.sampleFragment" type="XML" />	
+			<Text text="{Orders>ShipName} , {Orders>ShipAddress} , {Orders>ShipCity} , {Orders>ShipCountry}"/>
+		</content>
+	</Page>
+</mvc:View>

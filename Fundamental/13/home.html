@@ -1,0 +1,42 @@
+<!--
+    Author     : Jibin Joy
+    SAPUI5 Navigation and Routing
+    Reference : 
+    - Note : Please ensure Model is Binded at Component Level or view 
+    - Descriptor for Applications https://help.sap.com/saphelp_uiaddon10/helpdata/en/90/2313063d6f45aeaa3388cc4c13c34e/content.htm
+    - Example and Explanation : https://sapui5.netweaver.ondemand.com/docs/guide/1b6dcd39a6a74f528b27ddb22f15af0d.html
+    - https://help.sap.com/saphelp_nw74/helpdata/en/68/8f36bd758e4ce2b4e682eef4dc794e/content.htm
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+    <HEAD>
+    <TITLE>SAPUI5 Navigation and Routing</TITLE>
+        <script
+				id="sap-ui-bootstrap"
+				src="/resources/sap-ui-core.js"
+				data-sap-ui-theme="sap_bluecrystal"
+				data-sap-ui-preload="async"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-resourceroots='{
+				    "external" : "JS",
+				    "i18n" : "i18n",
+				    "Fundamental" : ""
+				}'>
+		</script>  
+		<script>
+		    sap.ui.require([
+    			"external/Helper"
+    		],function (Helper) {
+    		    sap.ui.getCore().attachInit(function(){
+    		    	new Helper().init();
+    		    });
+    		});
+		</script>
+    </HEAD>
+    <BODY>
+        <DIV ID="content">
+            
+        </DIV>
+    </BODY>
+</HTML>

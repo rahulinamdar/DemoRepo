@@ -1,0 +1,9 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="Fundamental.controller.home"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Home">
+		<content>
+			<Button text="Lets go to 2nd Page" press="onPress"/>
+			<Button text="Destroy 2nd Page" press="onDestroy"/>
+		</content>
+	</Page>
+</mvc:View>

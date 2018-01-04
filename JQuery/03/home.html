@@ -1,0 +1,36 @@
+<!--
+    Author     : Jibin Joy
+    jQuery UI and Themes 
+    - Custom and Stable 
+    Reference  : 
+        1. http://jqueryui.com/
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+    <HEAD>
+    <TITLE>jQuery UI and Themes</TITLE>
+    <LINK rel="stylesheet" type="text/css" href="CSS/jquery-ui.css">
+    <SCRIPT src="JS/jquery-2.2.4.js"></SCRIPT>
+    <SCRIPT src="JS/jquery-ui.js"></SCRIPT>
+    <SCRIPT>
+        $(document).ready(function(){
+            $( "#tab" ).tabs();
+        });
+        </SCRIPT>
+    </HEAD>
+    <BODY>
+       <div id="tab">
+          <ul>
+            <li><a href="#tab1">Tab1</a></li>
+            <li><a href="#tab2">Tab2</a></li>
+          </ul>
+          <div id="tab1">
+             Welcome to Tab1 
+          </div>
+          <div id="tab2">
+            Welcome to Tab2 
+          </div>
+        </div>
+    </BODY>
+</HTML>

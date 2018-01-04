@@ -1,0 +1,38 @@
+<!--
+    Author     : Jibin Joy
+    SAPUI5 Formatter and Factory
+    Reference  : 
+        1. Formatter  : 
+        	- https://help.sap.com/saphelp_uiaddon10/helpdata/en/07/e4b920f5734fd78fdaa236f26236d8/content.htm
+        	- https://help.sap.com/saphelp_uiaddon10/helpdata/en/91/f0652b6f4d1014b6dd926db0e91070/content.htm
+        2. Factory : https://help.sap.com/saphelp_uiaddon10/helpdata/en/91/f057786f4d1014b6dd926db0e91070/content.htm
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+    <HEAD>
+    <TITLE>SAPUI5 Formatter and Factory</TITLE>
+        <script
+				id="sap-ui-bootstrap"
+				src="/resources/sap-ui-core.js"
+				data-sap-ui-theme="sap_bluecrystal"
+				data-sap-ui-libs="sap.ui.commons,sap.m"
+				data-sap-ui-preload="async"
+				data-sap-ui-resourceroots='{
+				    "external" : "JS"
+				}'>
+		</script>  
+		<script>
+		    sap.ui.require([
+    			"external/Helper"
+    		],function (oHelper) {
+    		    sap.ui.getCore().attachInit(oHelper.init);
+    		});
+		</script>
+    </HEAD>
+    <BODY>
+        <DIV ID="content">
+            
+        </DIV>
+    </BODY>
+</HTML>

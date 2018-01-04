@@ -1,0 +1,42 @@
+<!--
+    Author     : Jibin Joy
+    SAPUI5 Expression Binding 
+    Reference : 
+    - https://help.sap.com/saphelp_uiaddon10/helpdata/en/0c/803921b1bf4b3a97a038fbd51ef542/content.htm
+    - https://openui5.hana.ondemand.com/docs/guide/c98d57347ba444c6945f596584d2db45.html
+    - https://openui5.hana.ondemand.com/docs/guide/5cff8d1c3fb84c5db7a00f2daca125af.html
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+    <HEAD>
+    <TITLE>SAPUI5 Navigation and Routing</TITLE>
+        <script
+				id="sap-ui-bootstrap"
+				src="/resources/sap-ui-core.js"
+				data-sap-ui-theme="sap_bluecrystal"
+				data-sap-ui-preload="async"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-xx-bindingSyntax="complex"
+				data-sap-ui-resourceroots='{
+				    "external" : "JS",
+				    "i18n" : "i18n",
+				    "Fundamental" : ""
+				}'>
+		</script>  
+		<script>
+		    sap.ui.require([
+    			"external/Helper"
+    		],function (Helper) {
+    		    sap.ui.getCore().attachInit(function(){
+    		    	new Helper().init();
+    		    });
+    		});
+		</script>
+    </HEAD>
+    <BODY>
+        <DIV ID="content">
+            
+        </DIV>
+    </BODY>
+</HTML>

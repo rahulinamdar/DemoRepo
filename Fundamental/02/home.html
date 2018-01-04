@@ -1,0 +1,43 @@
+<!--
+    Author     : Jibin Joy
+    First Control in SAPUI5
+    Reference  : 
+        1. Library : https://help.sap.com/saphelp_nw74/helpdata/en/36/3cd16eba1f45babe3f661f321a7820/content.htm  
+        2. Controls : https://sapui5.netweaver.ondemand.com/#content/Controls/index.html
+        3. API : https://sapui5.netweaver.ondemand.com/#docs/api/symbols/sap.ui.html
+        4. Example : https://sapui5.netweaver.ondemand.com/explored.html
+        5. Icons : https://sapui5.netweaver.ondemand.com/iconExplorer.html
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+    <HEAD>
+    <TITLE>First Control in SAPUI5</TITLE>
+        <!-- 
+            Stylesheet
+        -->
+        <script
+				id="sap-ui-bootstrap"
+				src="/resources/sap-ui-core.js"
+				data-sap-ui-theme="sap_bluecrystal"
+				data-sap-ui-libs="sap.ui.commons,sap.m"
+				data-sap-ui-preload="async"
+				data-sap-ui-resourceroots='{
+				    "external" : "JS",
+				    "dsd.dsd.ds" : ""
+				}'>
+		</script>  
+		<script>
+		    sap.ui.require([
+    			"external/Helper"
+    		],function (oHelper) {
+    		    sap.ui.getCore().attachInit(oHelper.init);
+    		});
+		</script>
+    </HEAD>
+    <BODY>
+        <DIV ID="content">
+            
+        </DIV>
+    </BODY>
+</HTML>

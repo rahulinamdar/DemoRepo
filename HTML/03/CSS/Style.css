@@ -1,0 +1,17 @@
+TH 
+{
+   text-transform: capitalize;   
+}
+
+TABLE TH:nth-child(1)
+{
+    text-transform: uppercase;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}

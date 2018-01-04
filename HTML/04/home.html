@@ -1,0 +1,83 @@
+<!--
+    Author     : Jibin Joy
+    Javascript Example 
+    Reference  : http://www.w3schools.com/js/default.asp
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML> 
+    <HEAD>
+    <TITLE>Javascript</TITLE>
+        <LINK rel="stylesheet" type="text/css" href="CSS/Style.css">
+        <SCRIPT src="JS/Script.js"></SCRIPT>
+        <SCRIPT>
+            function onDOMLoaded()
+            {
+                alert("Loaded Everything");
+                
+                var project = document.getElementById("project");
+                project.classList.add("hidden");
+                
+                var button = document.getElementById("button");
+                button.innerHTML = "Employee";
+            }
+        </SCRIPT>
+    </HEAD>
+    <BODY onload="onDOMLoaded()">
+        <!--
+            Button for toggle Employee and Project
+        -->
+        <button id="button" type="button" onclick="toggle()"></button>
+        <!--
+            Employee Information
+        -->
+         <TABLE id="employee">
+            <THEAD>
+                <TR>
+                    <TH>id</TH>
+                    <TH>employee name</TH>
+                </TR>
+            </THEAD>
+            <TBODY>
+                <TR>
+                    <TD>001</TD>
+                    <TD>employee1</TD>
+                </TR>
+                <TR>
+                    <TD>002</TD>
+                    <TD>employee2</TD>
+                </TR>
+                <TR>
+                    <TD>003</TD>
+                    <TD>employee2</TD>
+                </TR>
+            </TBODY>
+         </TABLE>
+    
+        <!--
+            Employee Information
+        -->     
+      <TABLE id="project">
+        <THEAD>
+            <TR>
+                <TH>id</TH>
+                <TH>project name</TH>
+            </TR>
+        </THEAD>
+        <TBODY>
+            <TR>
+                <TD>P001</TD>
+                <TD>project1</TD>
+            </TR>
+            <TR>
+                <TD>P002</TD>
+                <TD>project2</TD>
+            </TR>
+            <TR>
+                <TD>P003</TD>
+                <TD>project3</TD>
+            </TR>
+        </TBODY>
+     </TABLE>
+    </BODY>
+</HTML>
